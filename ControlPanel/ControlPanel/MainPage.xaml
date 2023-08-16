@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlPanel.MainPage">
+
+    <StackLayout x:Name="stackLayout" BackgroundColor="Black">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="0.2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry x:Name="ipControl"
+                   Grid.Column="0"
+                   Text="192.168.0.104"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Gray"/>
+            
+            <Entry x:Name="portControl"
+                   Grid.Column="1"
+                   Text="4004"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Gray"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
